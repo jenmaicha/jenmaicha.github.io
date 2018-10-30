@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+
+html {
+font-size: 62.5%;
+}
+
+body {
+font-family: "PT Serif",serif;
+font-size: 1.6rem;
+margin: 0;
+}
+
+#guide {
+margin-bottom: 1rem;
+overflow: auto;
+position: absolute;
+right: 1rem;
+top: 1rem;
+width: 50rem;
+}
+
+#map-container {
+height: calc(100% - 2rem);
+left: 1rem;
+position: fixed;
+top: 1rem;
+width: calc(100% - 55rem);
+}
+
+#map {
+height: 100%;
+width: 100%;
+}
+
+h1 {
+line-height: 1;
+margin-top: 0;
+}
+
+h2 {
+border-bottom: 1px solid black;
+margin-top: 2em;
+}
+
+h3 {
+margin-bottom: 0.1em;
+}
+
+h3 + p {
+margin-top: 0;
+}
+
+p {
+color: #555;
+line-height: 1.5;
+}
+
+.listing {
+display: block;
+}
+

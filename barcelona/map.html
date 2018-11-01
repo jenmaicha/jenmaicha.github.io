@@ -24,11 +24,7 @@
             maxZoom: 24,
             accessToken: 'pk.eyJ1IjoiamVubWFpY2hhIiwiYSI6ImNqbnZ6MTdkZTBhcXYzdm5uYTEyNnBwYWwifQ.10fWy60B3T8W4OSONU01Aw'
         }).addTo(map);
-        L.geoJSON(bcn, {
-            onEachFeature: function (feature) { 
-                //console.log(document.getElementById('control-'+feature.properties.id)); 
-            }
-        }).bindPopup(function (layer) {
+        L.geoJSON(bcn, { }).bindPopup(function (layer) {
             return layer.feature.properties.name;
         }).addTo(map);
      };

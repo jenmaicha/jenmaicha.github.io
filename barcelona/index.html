@@ -24,11 +24,7 @@
             maxZoom: 24,
             accessToken: 'pk.eyJ1IjoiamVubWFpY2hhIiwiYSI6ImNqbnZ6MTdkZTBhcXYzdm5uYTEyNnBwYWwifQ.10fWy60B3T8W4OSONU01Aw'
         }).addTo(map);
-        L.geoJSON(bcn, {
-            onEachFeature: function (feature) { 
-                //console.log(document.getElementById('control-'+feature.properties.id)); 
-            }
-        }).bindPopup(function (layer) {
+        L.geoJSON(bcn, { }).bindPopup(function (layer) {
             return layer.feature.properties.name;
         }).addTo(map);
      };
@@ -36,41 +32,47 @@
 </head>
 <body>
     <div id="guide">
-    <h1>Barcelona</h1>
-    <p>Hope you have a good visit!</p>
+    <h1 class="screen">Barcelona</h1>
+    <p class="screen">Hope you have a good visit!</p>
+    <p class="screen">Printing this page will just print out the text below. Use <a href="map.html">this map</a> to pan, zoom, and print out sections of the map in detail. Check the print preview first to make sure you're getting what you want.</p>
 
     <h2>Landmarks</h2>
     <p>Some sites you're already familiar with, for reference. It's a 2.5-mile walk from the Columbus statue to Sagrada Familia.</p>
-    <ul>
+    <ol>
         <li>Sagrada Familia</li>
         <li>Columbus statue</li>
         <li>Cathedral</li>
-    </ul>
+    </ol>
 
     <h2>Things to Do</h2>
 
-    <h3>Donkey Tours</h3>
+    <h3>4. Donkey Tours</h3>
     <p>This is a pay-what-you-want walking tour company. I did this itinerary (but in Spanish). It was a nice way to explore the old town, and the guide was a good storyteller, too. English-language tours start at 11 a.m. in Placa Nova, near the cathedral. Allow 2.5 to 3 hours for the tour. <a class="listing" href="https://donkeytours.es/en/old-town/">https://donkeytours.es/en/old-town/</a></p>
 
-    <h3>Born Center for Culture and Memory</h3>
+    <h3>5. Born Center for Culture and Memory</h3>
     <p>A free museum and cultural space that focuses on the history of the Born neighborhood. The centerpiece is a large excavation of the ruins of a portion of the neighborhood that was destroyed during the War of the Spanish Succession (early 1700s). <a class="listing" href="http://elbornculturaimemoria.barcelona.cat/en/the-center/">http://elbornculturaimemoria.barcelona.cat/en/the-center/</a></p>
 
-    <h3>Museu d'Història de Barcelona</h3>
+    <h3>6. Museu d'Història de Barcelona</h3>
     <p>A municipal history museum that runs/maintains heritage sites around the city, including ancient Roman sites, the medieval Jewish quarter, the steps where (according to legend) Ferdinand and Isabella received Columbus when he returned from his first trip to the "New World," and a Spanish Civil War-era bomb shelter. <a class="listing" href="http://ajuntament.barcelona.cat/museuhistoria/en/muhba-placa-del-rei">http://ajuntament.barcelona.cat/museuhistoria/en/muhba-placa-del-rei</a></p>
 
-    <h3>Basilica de Santa Maria del Mar</h3>
+    <h3>7. Basilica de Santa Maria del Mar</h3>
     <p>Lovely, unadorned Catalan Gothic church in El Born. <a class="listing" href="http://www.santamariadelmarbarcelona.org/home/">http://www.santamariadelmarbarcelona.org/home/</a></p>
 
-    <h3>Parc de la Ciutadella</h3>
+    <h3>8. Parc de la Ciutadella</h3>
     <p>Formal park with a lively atmosphere. Note that the Catalan parliament building is within the park grounds.</p>
 
-    <h3>Port Cable Car and Montjuïc Cable Car</h3>
+    <h3>9-12. Port Cable Car and Montjuïc Cable Car</h3>
     <p>You can take a cable car from the beach up to Montjuïc, walk a bit, and then catch another cable car up to the top of Montjuïc, where there is a castle (see below) and presumably some very nice views.  I've never done this. Check this page for information: <a class="listing" href="https://barcelonalowdown.com/barcelona-cable-cars/">https://barcelonalowdown.com/barcelona-cable-cars/</a></p>
+    <p>9. Port cable car start point<br />
+       10. Port cable car end point<br />
+       11. Montjuïc cable car start point<br />
+       12. Montjuïc cable car end point
+    </p>
 
-    <h3>Montjuïc Castle</h3>
+    <h3>13. Montjuïc Castle</h3>
     <p>I've never been here, but this is what's at the end of the pair of cable cars. <a class="listing" href="http://ajuntament.barcelona.cat/castelldemontjuic/en">http://ajuntament.barcelona.cat/castelldemontjuic/en</a></p>
 
-    <h3>Beachfront walkway</h3>
+    <h3>14. Beachfront walkway</h3>
     <p>There's a nice beachfront area from the W hotel to Port Olimpic.</p>
 
 
@@ -82,19 +84,19 @@
 
     <p><strong>Pan con tomate</strong> is a classic Catalan snack of grilled bread brushed with olive oil and crushed tomato. <strong>Vermouth</strong> is served on tap. <strong>Cava</strong> (a sparkling wine) is another local/regional specialty. <strong>Roasted chestnuts</strong> are a fall specialty. Get them and sweet potatoes from street vendors. <strong>Patatas bravas</strong> are roasted potatoes with a spicy sauce.
 
-    <h3>Bormuth</h3>
+    <h3>15. Bormuth</h3>
     <p>Friendly, inexpensive place for vermouth, drinks, and tapas near the Born Center for Culture and Memory. The lentil salad was light and refreshing. <a class="listing" href="https://www.yelp.com/biz/bormuth-barcelona">https://www.yelp.com/biz/bormuth-barcelona</a></p> 
 
-    <h3>Les Dues Sicilies</h3>
+    <h3>16. Les Dues Sicilies</h3>
     <p>Pizza by the slice. Several locations. <a class="listing" href="https://www.facebook.com/lesduesiciliesbcn/">https://www.facebook.com/lesduesiciliesbcn/</a></p>
 
-    <h3>La Fábrica</h3>
+    <h3>17. La Fábrica</h3>
     <p>Empanadas! <a class="listing" href="http://www.lafabrica-bcn.com/">http://www.lafabrica-bcn.com/</a></p>
 
-    <h3>Al Sur</h3>
+    <h3>18. Al Sur</h3>
     <p>A nice, relaxing cafe with several locations. I used to go to the one on Carrer dels Carders to write. <a class="listing" href="http://www.alsurcafe.com/">http://www.alsurcafe.com/</a></p>
 
-    <h3>Santa Caterina market</h3>
+    <h3>19. Santa Caterina market</h3>
     <p>Various food vendors. Their website is only in Catalan though.</p>
 
     </div>

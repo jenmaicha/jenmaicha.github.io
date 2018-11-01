@@ -4,7 +4,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 9,
-        "name": "Parc de la Ciutadella",
+        "name": "8. Parc de la Ciutadella",
         "type": "do"
       },
       "geometry": {
@@ -20,7 +20,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 18,
-        "name": "Montjuic Cable Car ends here?",
+        "name": "12. Montjuic Cable Car ends here?",
         "type": "do"
       },
       "geometry": {
@@ -36,7 +36,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 19,
-        "name": "Montjuic Castle",
+        "name": "13. Montjuic Castle",
         "type": "do"
       },
       "geometry": {
@@ -52,7 +52,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 7,
-        "name": "MUHBA Placa del Rei",
+        "name": "6. MUHBA Placa del Rei",
         "type": "do"
       },
       "geometry": {
@@ -67,7 +67,7 @@ var bcn = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Bormuth",
+        "name": "15. Bormuth",
         "id": 2,
         "type": "eat"
       },
@@ -84,7 +84,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 4,
-        "name": "Sagrada Familia",
+        "name": "1. Sagrada Familia",
         "type": "landmark"
       },
       "geometry": {
@@ -100,7 +100,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 6,
-        "name": "Donkey Tours starting point",
+        "name": "4. Donkey Tours starting point",
         "type": "do"
       },
       "geometry": {
@@ -115,7 +115,7 @@ var bcn = {
     {
       "type": "Feature",
       "properties": {
-        "name": "Born Center for Culture and Memory",
+        "name": "5. Born Center for Culture and Memory",
         "id": 1,
         "type": "do"
       },
@@ -132,7 +132,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 10,
-        "name": "Port Cable Car",
+        "name": "9. Port Cable Car starts here",
         "type": "do"
       },
       "geometry": {
@@ -148,7 +148,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 13,
-        "name": "Les Dues Sicilies - Carrer dels Carders",
+        "name": "16. Les Dues Sicilies - Carrer dels Carders",
         "type": "eat"
       },
       "geometry": {
@@ -164,7 +164,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 17,
-        "name": "Montjuic Cable Car starts here?",
+        "name": "11. Montjuic Cable Car starts here?",
         "type": "do"
       },
       "geometry": {
@@ -180,7 +180,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 15,
-        "name": "Plaza with Mediterranean view",
+        "name": "14. Plaza with Mediterranean view - southern end of beachfront",
         "type": "do"
       },
       "geometry": {
@@ -196,7 +196,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 8,
-        "name": "Basilica de Santa Maria del Mar",
+        "name": "7. Basilica de Santa Maria del Mar",
         "type": "do"
       },
       "geometry": {
@@ -212,7 +212,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 16,
-        "name": "Port Cable Car ends here",
+        "name": "10. Port Cable Car ends here",
         "type": "do"
       },
       "geometry": {
@@ -228,7 +228,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 5,
-        "name": "Cathedral",
+        "name": "3. Cathedral",
         "type": "landmark"
       },
       "geometry": {
@@ -244,7 +244,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 12,
-        "name": "La Fabrica",
+        "name": "17. La Fabrica",
         "type": "eat"
       },
       "geometry": {
@@ -260,7 +260,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 11,
-        "name": "Al Sur - Carrer dels Carders",
+        "name": "18. Al Sur - Carrer dels Carders",
         "type": "eat"
       },
       "geometry": {
@@ -276,7 +276,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 14,
-        "name": "Santa Caterina Market",
+        "name": "19. Santa Caterina Market",
         "type": "eat"
       },
       "geometry": {
@@ -292,7 +292,7 @@ var bcn = {
       "type": "Feature",
       "properties": {
         "id": 3,
-        "name": "Columbus statue",
+        "name": "2. Columbus statue",
         "type": "landmark"
       },
       "geometry": {

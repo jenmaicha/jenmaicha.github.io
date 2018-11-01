@@ -27,6 +27,14 @@ top: 1rem;
 width: calc(100% - 55rem);
 }
 
+#maponly-container {
+height: calc(100% - 2rem);
+left: 1rem;
+position: fixed;
+top: 1rem;
+width: calc(100% - 2rem);
+}
+
 #map {
 height: 100%;
 width: 100%;

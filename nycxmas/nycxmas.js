@@ -1,4 +1,4 @@
-{
+var nycxmas = {
   "features": [
     {
       "type": "Feature",
@@ -238,4 +238,4 @@
     }
   ],
   "type": "FeatureCollection"
-}
+};

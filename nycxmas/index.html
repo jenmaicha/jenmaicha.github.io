@@ -27,7 +27,7 @@
         L.geoJSON(nycxmas, { }).bindPopup(function (layer) {
             var content = '<p>';
             content += '<strong>' + layer.feature.properties.name + '</strong>';
-            //content += (layer.feature.properties.location) ? ' at ' + layer.feature.properties.location : '';
+            content += (layer.feature.properties.location) ? '<br />' + layer.feature.properties.location : '';
             content += (layer.feature.properties.locnotes) ? '<br />' + layer.feature.properties.locnotes : '';
             content += '</p>';
             content += (layer.feature.properties.description) ? '<p>' + layer.feature.properties.description + '</p>' : '';

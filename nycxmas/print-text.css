@@ -1,0 +1,60 @@
+/* -- Print the text as a two-column guide -- */
+
+@media print {
+
+  @page {
+  margin: 0.3in;
+  }
+
+  #map-container,
+  #intro,
+  .listing {
+  display: none;
+  }
+
+  #guide {
+  font-size: 1.2rem;
+  margin: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  }
+
+  #leftcol {
+  margin-right: 0.0625in;
+  width: calc(50% - 0.3625in);
+  }
+
+  #rightcol {
+  left: 50%;
+  margin-left: 0.0625in;
+  position: absolute;
+  top: 0;
+  width: (50% - 0.3625in);
+  }
+
+  h2 {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 1rem;
+  }
+
+  ol {
+  margin-bottom: 2.5rem;
+  }
+
+  h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+
+  p {
+  color: #333333;
+  }
+
+  a:link {
+  text-decoration: none;
+  }
+
+}
+

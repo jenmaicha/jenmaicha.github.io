@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1, initial-scale=1">
+    <title>NYC Christmas Markets</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+    <script type="text/javascript" src="nycxmas.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        var map = L.map('map', {
+            closePopupOnClick: false,
+            scrollWheelZoom: false
+        }).setView([40.752,-73.977], 14);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            id: 'mapbox.streets',
+            maxZoom: 24,
+            accessToken: 'pk.eyJ1IjoiamVubWFpY2hhIiwiYSI6ImNqcGFkdW00ZDAzdjMza29mdWNiZGY0dHoifQ.UbYXndqSUSr2h1G0S3-SqQ'
+        }).addTo(map);
+        L.geoJSON(nycxmas, { }).bindPopup(function (layer) {
+            var content = '<p>';
+            content += '<strong>' + layer.feature.properties.name + '</strong>';
+            //content += (layer.feature.properties.location) ? ' at ' + layer.feature.properties.location : '';
+            content += (layer.feature.properties.locnotes) ? '<br />' + layer.feature.properties.locnotes : '';
+            content += '</p>';
+            content += (layer.feature.properties.description) ? '<p>' + layer.feature.properties.description + '</p>' : '';
+            content += (layer.feature.properties.url) ? '<p><a href="' + layer.feature.properties.url + '">' + layer.feature.properties.url + '</a></p>' : '';
+            return content;
+        }).addTo(map);
+     };
+    </script>
+</head>
+<body>
+    <div id="maponly-container">
+        <div id="map"></div>
+    </div>
+
+</body>
+</html>

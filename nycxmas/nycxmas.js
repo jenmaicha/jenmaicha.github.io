@@ -1,4 +1,4 @@
-var nycxmas = {
+{
   "features": [
     {
       "type": "Feature",
@@ -6,7 +6,7 @@ var nycxmas = {
         "id": 10,
         "name": "PDT (Please Don't Tell)",
         "location": "113 St. Mark's Place",
-        "locnotes": "St. Mark's between First Avenue and Avenue A",
+        "locnotes": "between First Avenue and Avenue A",
         "description": "Enter through a phone booth in Crif Dogs. Opens at 6pm.",
         "url": "https://www.yelp.com/biz/please-dont-tell-new-york-2",
         "type": "bar"
@@ -28,7 +28,7 @@ var nycxmas = {
         "location": "Chelsea Market",
         "description": "Handmade Cavalcade is a pop-up market in the Chelsea Market Event space from Dec 3-9.  Organized by NY Handmade Collective with support from Etsy.",
         "url": "http://www.handmadecavalcade.com/about/",
-        "locnotes": "Between Ninth and Tenth Aves between W 15th and W 16th St",
+        "locnotes": "between Ninth and Tenth Aves and W 15th and W 16th St",
         "type": "market"
       },
       "geometry": {
@@ -105,7 +105,7 @@ var nycxmas = {
         "id": 8,
         "name": "Urbanspace @ 570 Lex",
         "location": "570 Lexington Avenue",
-        "locnotes": "Lexington at E 51st St (between Park and Third Ave)",
+        "locnotes": "at E 51st St (between Park and Third Ave)",
         "description": "A food hall with ~16 vendors.",
         "url": "https://www.urbanspacenyc.com/570-lexington/",
         "type": "food"
@@ -125,7 +125,7 @@ var nycxmas = {
         "id": 11,
         "name": "Employees Only",
         "location": "510 Hudson St",
-        "locnotes": "Hudson St between Christopher St and W 10th St",
+        "locnotes": "between Christopher St and W 10th St",
         "description": "Pricey cocktails. Opens at 6. Close to Christopher St PATH station.",
         "url": "http://employeesonlynyc.com/",
         "type": "bar"
@@ -205,7 +205,7 @@ var nycxmas = {
         "id": 12,
         "name": "Proletariat",
         "location": "102 St. Mark's Pl",
-        "locnotes": "St. Mark's between First Ave and Avenue A",
+        "locnotes": "between First Ave and Avenue A",
         "description": "Small bar with unusual craft beers.",
         "url": "https://www.proletariatny.com/home-1",
         "type": "bar"
@@ -238,4 +238,4 @@ var nycxmas = {
     }
   ],
   "type": "FeatureCollection"
-};
+}

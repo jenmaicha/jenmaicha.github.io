@@ -104,8 +104,8 @@ var nycxmas = {
       "properties": {
         "id": 8,
         "name": "Urbanspace @ 570 Lex",
-        "location": "General Electric Building",
-        "locnotes": "570 Lexington Avenue  // at E 51st St, between Park and Third Ave",
+        "location": "570 Lexington Avenue",
+        "locnotes": "Lexington at E 51st St (between Park and Third Ave)",
         "description": "A food hall with ~16 vendors.",
         "url": "https://www.urbanspacenyc.com/570-lexington/",
         "type": "food"

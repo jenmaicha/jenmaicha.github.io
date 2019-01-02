@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+
+html {
+font-size: 62.5%;
+}
+
+body {
+font-family: "PT Sans",sans-serif;
+font-size: 1.6rem;
+margin: 1rem auto;
+max-width: 65rem;
+}
+
+h1 {
+font-family: "PT Serif",serif;
+}
+
+p {
+color: #555;
+line-height: 1.5;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1, initial-scale=1" />
+    <title>January 1, 2019: Notes</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+    <h1>January 1, 2019: Notes</h1>
+
+    <p>For this <a href="./index.html">map</a>, I converted an <a href="https://jenmaicha.github.io/nycxmas/">existing map of NYC Christmas markets</a> (and a few other points of interest) that I made for a day trip last month from Leaflet.js to Mapbox GL JS.</p>
+
+    <h2>Approach</h2>
+
+    <p>I based this project off a tutorial series from Mapbox (but using my own data). The basic idea is to create a data set in the Mapbox Studio dataset editor, export the dataset as a tileset, style the tileset as a layer in Mapbox Studio, add the custom style to a Mapbox GL JS map, and then add some interactivity for marker popups.</p>
+
+    <h2>Notes</h2>
+
+    <p>In Mapbox Style Studio: the layer gets a type. "Symbol" is a type that can be text labels or icons.</p>
+
+    <p>The Maki icon set is available to use. It's customizable. But the Maki icons are definitely designed and sized to blend into an overall map, rather than stand out as overlay markers on a map.</p>
+
+    <p>The popups work by querying all features from a specified layer/set of layers in the map style that are rendered at the point on the map where the user clicks, and then pulling info from the first element in the returned array of rendered features. Which is kind of a cool thing to be able to do... but is missing the hover action of the hand changing to a pointer when there is something clickable.</p>
+
+    <p>I'm not thrilled yet with the idea of all of this data being embedded into the map "style," but I can't tell if that's just because I'm used to thinking of custom data as overlay/additional to an underlying map. Hm.</p>
+
+    <p>Need to read up on the distinction between datasets and tilesets (see link below).</p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.mapbox.com/help/add-points-pt-1/">Add points to a web map, part 1: create a dataset</a></li>
+      <li><a href="https://www.mapbox.com/help/add-points-pt-2/">Add points to a web map, part 2: create a style</a></li>
+      <li><a href="https://www.mapbox.com/help/add-points-pt-3/">Add points to a web map, part 3: add interactivity</a></li>
+      <li><a href="https://www.mapbox.com/maki-icons/">Maki icon set</a></li>
+    </ul>
+
+    <h2>To Read</h2>
+
+    <ul>
+      <li><a href="https://www.mapbox.com/studio-manual/overview/geospatial-data/">Geospatial data</a> // from the Mapbox Studio manual</li>
+      <li><a href="https://www.mapbox.com/help/how-web-apps-work/">Mapbox web applications</a> // should be useful to read this and get a feel for baked-in map data versus apps</li>
+    </ul>
+
+  </body>
+</html>
+

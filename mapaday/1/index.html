@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Map 1: NYC Christmas markets</title>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" />
+    <link rel="stylesheet" type="text/css" href="1.css" />
+    <script>
+    window.onload = function() {
+      mapboxgl.accessToken = "pk.eyJ1IjoiamVubWFpY2hhIiwiYSI6ImNqcWVka2RvODAzYzE0YW4wbm91NTVndWoifQ.LTjIsIK91LLsSHhZQhxTYw";
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jenmaicha/cjqedl95khmun2srqfc9i7p9n',
+        center: [-73.980,40.742],
+        zoom: 12.5
+      });
+      map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+          layers: ['nyc-christmas-markets']
+        });
+        if (!features.length) { return; }
+        var feature = features[0];
+
+        var html = '<p><strong>' + feature.properties.name + '</strong>';
+        html += (feature.properties.location) ? '<br />' + feature.properties.location : '';
+        html += (feature.properties.locnotes) ? '<br />' + feature.properties.locnotes : '';
+        html += '</p>';
+        html += (feature.properties.description) ? '<p>' + feature.properties.description + '</p>' : '';
+        html += (feature.properties.url) ? '<p><a href="' + feature.properties.url + '">' + feature.properties.url + '</a></p>' : '';
+
+        var popup = new mapboxgl.Popup({ offset: [0, -15] })
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(html)
+          .addTo(map);
+      });
+    };
+    </script>
+  </head>
+  <body>
+    <div id="maponly-container">
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
+

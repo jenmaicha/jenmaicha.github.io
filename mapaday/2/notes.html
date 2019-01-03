@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1, initial-scale=1" />
+    <title>January 2, 2019: Notes</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+  </head>
+  <body>
+    <h1>January 2, 2019: Notes</h1>
+
+    <p>This <a href="./index.html">map</a> is an attempt to downplay road networks and highlight hiking paths.</p>
+
+    <h2>Approach</h2>
+
+    <p>I used Mapbox Studio to create a custom map style. Starting from their "Outdoor" map, which has layers for elevation contour lines, hiking paths, etc., my goal was to remove or downplay certain elements, like administrative boundaries and roads, and style the hiking paths more like the road networks so that they were prominent at lower zoom levels, showed a distinction between long distance paths and shorter ones, etc.</p>
+
+
+    <h2>Notes</h2>
+
+    <p>It turns out that this project mainly involves developing an understanding about what a Mapbox style <em>is</em> and how its layers interact with the underlying data.</p>
+
+    <p>Mapbox uses tilesets as a geospatial data format, and defines a JSON <a href="https://www.mapbox.com/mapbox-gl-js/style-spec/">style specification</a>. Mapbox GL combines the style specification with the tilesets used by the style, and draws the digital map.</p>
+
+    <p>The Outdoor map style I started from uses data from Mapbox Terrain and Mapbox Streets v7. Streets v7 is the data soure I am most interested in here. Within that, the roads layer is what I care about most (then the road_label layer). Streets v7 data is drawn from OpenStreetMap.</p>
+
+    <p>For some reason, lines from the roads layer with class=path aren't displaying at zoom levels below 14.</p>
+
+    <p>Oh man. Even just identifying and differentiating different trails, paths, and walkways is more challenging than I thought it would be. This is going to be an ongoing project, I think.</p>
+
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.mapbox.com/studio-manual/overview/">Mapbox Studio Manual: Overview</a></li>
+      <li><a href="https://www.mapbox.com/mapbox-gl-js/style-spec/">Mapbox Style Specification</a></li>
+      <li><a href="https://www.mapbox.com/vector-tiles/mapbox-streets-v7/">Mapbox Streets v7</a> // A guide to the data inside the Mapbox Streets vector tile source</li>
+    </ul>
+
+    <h2>To Read</h2>
+
+    <ul>
+    </ul>
+
+  </body>
+</html>
+

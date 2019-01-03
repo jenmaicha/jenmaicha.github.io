@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Map 2: Style hiking paths like road networks</title>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" />
+    <link rel="stylesheet" type="text/css" href="2.css" />
+    <script>
+    window.onload = function() {
+      mapboxgl.accessToken = "pk.eyJ1IjoiamVubWFpY2hhIiwiYSI6ImNqcWVka2RvODAzYzE0YW4wbm91NTVndWoifQ.LTjIsIK91LLsSHhZQhxTYw";
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/jenmaicha/cjqfqfp8ck1ub2rntt5fzyor9',
+        center: [-74.534,40.765],
+        zoom: 14
+      });
+    };
+    </script>
+  </head>
+  <body>
+    <div id="maponly-container">
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
+

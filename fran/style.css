@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+
+html {
+font-size: 62.5%;
+}
+
+body {
+font-family: "PT Serif",serif;
+font-size: 1.6rem;
+margin: 1em;
+}
+
+#embed-container {
+background-color: black;
+max-width: 55rem;
+margin: 0 auto 4em auto;
+width: 100%;
+}
+
+#guide {
+max-width: 55rem;
+margin: 0 auto;
+width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+    margin: 0;
+    }
+
+    #embed-container {
+    background-color: transparent;
+    height: calc(100% - 2rem);
+    left: 1rem;
+    margin-bottom: 0;
+    max-width: 55rem;
+    position: fixed;
+    top: 1rem;
+    width: 100%;
+    }
+
+    .twitter-tweet-rendered {
+    margin-top: 0 !important;
+    }
+        
+    #guide {
+    margin-bottom: 1rem;
+    max-width: none;
+    overflow: auto;
+    position: absolute;
+    right: 5rem;
+    top: 1rem;
+    width: calc(100% - 64rem);
+    }
+    
+}
+
+h1 {
+line-height: 1;
+margin-top: 0;
+}
+
+h2 {
+border-bottom: 1px solid black;
+margin-top: 2em;
+}
+
+p {
+color: #555;
+line-height: 1.5;
+}

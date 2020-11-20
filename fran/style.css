@@ -19,25 +19,18 @@ width: 100%;
 
 #guide {
 max-width: 55rem;
-margin: 0 auto;
+margin: 0 auto 4em auto;
 width: 100%;
 }
 
-@media screen and (min-width: 1000px) {
-
-    body {
-    margin: 0;
-    }
+@media screen and (min-width: 1150px) {
 
     #embed-container {
     background-color: transparent;
-    height: calc(100% - 2rem);
-    left: 1rem;
+    left: calc(50% - 57.5rem);
     margin-bottom: 0;
-    max-width: 55rem;
-    position: fixed;
+    position: absolute;
     top: 1rem;
-    width: 100%;
     }
 
     .twitter-tweet-rendered {
@@ -45,11 +38,9 @@ width: 100%;
     }
         
     #guide {
-    margin-bottom: 1rem;
-    max-width: none;
-    overflow: auto;
+    max-width: 55rem;
     position: absolute;
-    right: 5rem;
+    left: calc(50% + 2.5rem);
     top: 1rem;
     width: calc(100% - 64rem);
     }
@@ -62,11 +53,29 @@ margin-top: 0;
 }
 
 h2 {
-border-bottom: 1px solid black;
 margin-top: 2em;
 }
 
 p {
 color: #555;
 line-height: 1.5;
+}
+
+p.title {
+font-weight: bold;
+padding-left: 3em;
+}
+
+p.utility-link {
+margin-top: 1em;
+padding-top: 1em;
+}
+
+p.utility-link::before {
+content: "❧ ";
+}
+
+span.couplet {
+display: inline-block;
+padding-left: 1em;
 }
